@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація на Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        .registration-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        .registration-form h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .registration-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box; /* Додаємо для того, щоб ширина включала внутрішні відступи та рамку */
+        }
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4267b2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: #365899;
+        }
+    </style>
+</head>
+<body>
+
+<div class="registration-form">
+    <h2>Реєстрація</h2>
+    <form>
+        <input type="text" placeholder="Ім'я" required>
+        <input type="text" placeholder="Прізвище" required>
+        <input type="email" placeholder="Електронна пошта" required>
+        <input type="password" placeholder="Новий пароль" required>
+        <div>
+            <label for="birthday">Дата народження:</label>
+            <input type="date" id="birthday" name="birthday" required>
+        </div>
+        <div>
+            <label>Стать:</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Жінка</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Чоловік</label>
+            <input type="radio" id="custom" name="gender" value="custom">
+            <label for="custom">Інше</label>
+        </div>
+        <button type="submit">Зареєструватися</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+      
+
